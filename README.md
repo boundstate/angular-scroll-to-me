@@ -15,4 +15,6 @@ Then load the module in your application by adding it as a dependent module:
     
 ## Usage
 
-    <div scroll-to-me="myVar"></div>
+The element must have an id specified to for the directive to work!
+
+    <div id="my-div" scroll-to-me="myVar" offset="0"></div>
