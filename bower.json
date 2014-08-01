@@ -1,6 +1,6 @@
 {
   "name": "angular-scroll-to-me",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "angular-scroll-to-me.js",
   "dependencies": {
     "angular": ">=1.2",
