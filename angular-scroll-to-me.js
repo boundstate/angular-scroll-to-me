@@ -13,14 +13,14 @@ angular.module('boundstate.scrollToMe', [])
 .directive('scrollToMe', function($timeout, $window, uuid) {
   return {
     link: function (scope, el, attrs) {
-      var id = angular.element(el).attr('id');
-      if (!id) {
-        id = uuid();
-        angular.element(el).attr('id', id);
-      }
       scope.$watch(attrs.scrollToMe, function (val) {
         if (angular.isDefined(val) && val) {
           $timeout(function () {
+            var id = angular.element(el).attr('id');
+            if (!id) {
+              id = uuid();
+              angular.element(el).attr('id', id);
+            }
             $window.smoothScroll.animateScroll(null, '#' + id);
           });
         }
