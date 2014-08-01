@@ -21,7 +21,9 @@ angular.module('boundstate.scrollToMe', [])
               id = uuid();
               angular.element(el).attr('id', id);
             }
-            $window.smoothScroll.animateScroll(null, '#' + id);
+            $window.smoothScroll.animateScroll(null, '#' + id, {
+              updateURL: false
+            });
           });
         }
       }, true);
