@@ -1,10 +1,13 @@
 {
   "name": "angular-scroll-to-me",
   "version": "0.0.1",
+  "main": "angular-scroll-to-me.js",
   "dependencies": {
-    "angular": ">=1.2"
-  },
-  "devDependencies": {
+    "angular": ">=1.2",
     "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git"
-  }
+  },
+  "ignore": [
+    "**/.*",
+    "package.json"
+  ]
 }
