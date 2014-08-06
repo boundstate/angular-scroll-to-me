@@ -1,6 +1,6 @@
 angular.module('boundstate.scrollToMe', [])
 
-.directive('scrollToMe', function($timeout, $window) {
+.directive('scrollToMe', ['$timeout', '$window', function($timeout, $window) {
   return {
     link: function (scope, el, attrs) {
       scope.$watch(attrs.scrollToMe, function (val) {
@@ -18,6 +18,6 @@ angular.module('boundstate.scrollToMe', [])
       }, true);
     }
   };
-})
+}])
 
 ;
